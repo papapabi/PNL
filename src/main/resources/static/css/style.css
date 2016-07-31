@@ -1,0 +1,137 @@
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.parallax-container {
+	height: 300px;
+}
+
+#header-image {
+	margin-top: 4px;
+	height: 300px;
+	background-image: url("../img/IMG_1611.jpg");
+	
+}
+
+.header-container {
+	position: relative;
+	height: 300px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.header-align {
+	position: relative;
+	height: 300px;
+
+}
+
+#header-text {
+	margin:auto;
+}
+
+.photos {
+	margin-top: 90px;
+}
+
+#golf-photos {
+	display: none;
+}
+
+#med-photos {
+	display:none;
+}
+
+#mangrove-photos {
+	display:none;
+}
+
+#business-photos {
+	display:none;
+}
+
+#itc-photos {
+	display:none;
+}
+
+#ceo-vill-photos{
+	display:none;
+}
+
+#theme-park-photos {
+	display:none;
+}
+
+#corp-vill-photos {
+	display:none;
+}
+
+#central-photos {
+	display:none;
+}
+
+#univ-belt-photos {
+	display: none;
+}
+
+#enviro-photos {
+	display:none;
+}
+
+#atc-photos {
+	display:none;
+}
+
+#celeb-photos {
+	display:none;
+}
+
+
+
+/* photo animations */
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+.pad-left{
+	padding-left: 1rem;
+}
+
+.pad-bot{
+	padding-bottom: 0.3rem;
+}
