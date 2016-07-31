@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Philippine New London</title>
+    <link rel="shortcut icon" href="pnl_logo.ico"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="webjars/materializecss/0.97.5/css/materialize.css" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div th:include="fragments/header :: header"></div>
+<br/>
+<div id="header-image">
+    <div class="header-align valign-wrapper" height="300px">
+        <h2 id="header-text" class="valign center-align">About Us</h2>
+    </div>
+</div>
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 m8 l8">
+                <div class="card grey lighten-3 z-depth-2">
+                    <div class="blue darken-4">
+                        <h2 class="white-text pad-left pad-bot">The Company</h2>
+                    </div>
+                    <div class="card-content">
+                        <h5><i>Philippine New London</i> is a project of <strong>Larramel International Developer
+                            Corporation</strong> (LIDC). </h5>
+                        <p class="flow-text">LIDC is an international organisation legally registered and incorporated
+                            as a wholly private limited liability company in the Philippines and the United Kingdom.
+                            Total shareholding of the company is held by five (5) partners with Attorney Maria Christine
+                            Manalo, Human Rights Lawyer resident in the United Kingdom, as the head. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m4 l4">
+                <div class="card z-depth-2">
+                    <div class="blue darken-4">
+                        <h2 class="white-text pad-left">AD <br/>SPACE</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12 m8 l8">
+                <div class="card grey lighten-3 z-depth-2">
+                    <div class="blue darken-4">
+                        <h2 class="white-text pad-left pad-bot">The Project</h2>
+                    </div>
+                    <div class="card-content">
+                        <p class="flow-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting, remaining
+                            essentially unchanged. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+</div>
+<!-- END of IN CARDS -->
+
+<div th:include="fragments/footer :: footer"></div>
+
+<!--  Scripts-->
+<script src="webjars/jquery/3.0.0/jquery.min.js"></script>
+<script src="js/pnl.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
