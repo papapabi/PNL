@@ -43,6 +43,21 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+
+		<!-- Materialize webjar -->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>materializecss</artifactId>
+			<version>0.97.5</version>
+		</dependency>
+
+		<!-- JQuery webjar -->
+		<dependency>
+		<groupId>org.webjars</groupId>
+		<artifactId>jquery</artifactId>
+		<version>3.0.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
