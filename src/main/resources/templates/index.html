@@ -15,11 +15,21 @@
 </head>
 <body>
 <div th:include="fragments/header :: header"></div>
-<div class="carousel carousel-slider " data-indicators="true">
-    <a class="carousel-item" href="#one!"><img src="img/Attachment_8a.jpg"/></a>
-    <a class="carousel-item" href="#two!"><img src="img/Attachment_9.jpg"/></a>
-    <a class="carousel-item" href="#three!"><img src="img/IMG_3328.jpg"/></a>
-    <a class="carousel-item" href="#four!"><img src="img/IMG_3124.jpg"/></a>
+<div class="slider" >
+    <ul class="slides">
+        <li>
+            <img src="img/Attachment_8a.jpg"/>
+        </li>
+        <li>
+            <img src="img/Attachment_9a.jpg"/>
+        </li>
+        <li>
+            <img src="img/IMG_3328.jpg"/>
+        </li>
+        <li>
+            <img src="img/IMG_3124.jpg"/>
+        </li>
+    </ul>
 </div>
 <div class="container">
     <div class="section">
@@ -58,5 +68,11 @@
 <script src="/webjars/jquery/3.0.0/jquery.js"></script>
 <script src="/webjars/materializecss/0.97.5/js/materialize.js"></script>
 <script src="js/init.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.slider').slider({full_width: true});
+    });
+</script>
 </body>
 </html>
