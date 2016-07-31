@@ -10,4 +10,9 @@ public class ViewController {
     public String concept() {
         return "about";
     }
+
+    @RequestMapping("/contact-us")
+    public String contactUs() {
+        return "contact_us";
+    }
 }

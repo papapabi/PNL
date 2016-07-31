@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <link rel="shortcut icon" href="pnl_logo.ico"/>
+    <title th:text="#{contact-us.title}">Contact Us</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="/webjars/materializecss/0.97.5/css/materialize.css" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+    <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<div th:include="fragments/header :: header"></div>
+
+<div class="container">
+    <div class="section">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s8">
+                    <h5>Name:</h5>
+                    <input id="name" type="text" class="validate" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <h5>E-Mail Address</h5>
+                    <input id="email" type="email" class="validate" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <h5>Subject</h5>
+                    <input id="subject" type="text" class="validate" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s10">
+                    <h5>Your Message:</h5>
+                    <textarea id="message" type="text" class="materialize-textarea"></textarea>
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<div th:include="fragments/footer :: footer"></div>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
