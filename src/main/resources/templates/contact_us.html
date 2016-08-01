@@ -19,23 +19,23 @@
 
 <div class="container">
     <div class="section">
-        <form class="col s12">
+        <form class="col s12" action="#" th:action="@{/contact-us}" th:object="${sender_details}" method="post">
             <div class="row">
                 <div class="input-field col s8">
                     <h5>Name:</h5>
-                    <input id="name" type="text" class="validate" />
+                    <input id="name" type="text" class="validate"/>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6">
                     <h5>E-Mail Address</h5>
-                    <input id="email" type="email" class="validate" />
+                    <input id="email" type="email" class="validate"/>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s6">
                     <h5>Subject</h5>
-                    <input id="subject" type="text" class="validate" />
+                    <input id="subject" type="text" class="validate"/>
                 </div>
             </div>
             <div class="row">
@@ -51,6 +51,7 @@
     </div>
 </div>
 
+<div th:replace="fragments/background :: background"></div>
 <div th:include="fragments/footer :: footer"></div>
 
 <!--  Scripts-->

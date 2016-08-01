@@ -8,22 +8,23 @@
 <body>
 <div th:fragment="header">
     <nav class="blue darken-4" role="navigation">
-        <div class="nav-wrapper">
-            <a id="logo-container" href="#" class="brand-logo"><img src="img/pnl_logo.jpg" alt="PNL"
-                                                                    style="width:200px;height:66px;"/></a>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo"><img src="img/pnl_logo.png" alt="PNL"
+                                                                    style="width:180px;height:66px;" /></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#" th:href="@{/}" th:text="#{navbar.home}">Home</a></li>
-                <li><a href="#" th:href="@{concept}" th:text="#{navbar.concept}">The Concept</a></li>
+                <li><a href="#" th:href="@{/concept}" th:text="#{navbar.concept}">The Concept</a></li>
                 <li><a href="#" th:href="@{/about}" th:text="#{navbar.about}">About</a></li>
                 <li><a href="#" th:href="@{/contact-us}" th:text="#{navbar.contactUs}">Contact Us</a></li>
             </ul>
+
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">The Concept</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#" th:href="@{/}" th:text="#{navbar.home}">Home</a></li>
+                <li><a href="#" th:href="@{/concept}" th:text="#{navbar.concept}">The Concept</a></li>
+                <li><a href="#" th:href="@{/about}" th:text="#{navbar.about}">About</a></li>
+                <li><a href="#" th:href="@{/contact-us}" th:text="#{navbar.contactUs}">Contact Us</a></li>
             </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
 </div>

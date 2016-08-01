@@ -45,6 +45,15 @@ $(document).ready(function() {
       $('#itc-photos').css('display','block');
       return false;
     });
+    $('#inter_zone2').on('click',function(){
+      $('#header').text("Internationl Town Center");
+      $('#caption').text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.");
+      $('#photo-container').css('display','none');
+      $('#photo-container').css('display','block');
+      $('#itc-photos').siblings().hide();
+      $('#itc-photos').css('display','block');
+      return false;
+    });
     $('#ceo_village').on('click',function(){
       $('#header').text("CEO Village");
       $('#caption').text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.");
@@ -73,6 +82,15 @@ $(document).ready(function() {
       return false;
     });
     $('#golf_course').on('click',function(){
+      $('#header').text("Golf Course");
+      $('#caption').text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.");
+      $('#photo-container').css('display','none');
+      $('#photo-container').css('display','block');
+      $('#golf-photos').siblings().hide();
+      $('#golf-photos').css('display','block');
+      return false;
+    });
+    $('#golf_course2').on('click',function(){
       $('#header').text("Golf Course");
       $('#caption').text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.");
       $('#photo-container').css('display','none');
