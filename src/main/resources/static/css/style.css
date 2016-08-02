@@ -145,3 +145,34 @@
 	background-color: none;
 }
 
+.legend{
+	font-size: 0.8rem;
+}
+
+.concept-map{
+	border-radius: 1rem;
+	background: #212b31; /* For browsers that do not support gradients */
+  	background: -webkit-linear-gradient(#141b1f, #212b31, #141b1f); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#141b1f, #212b31, #141b1f); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#141b1f, #212b31, #141b1f); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#141b1f, #212b31, #141b1f); /* Standard syntax */
+
+}
+
+html{
+	background-color: #eeeeee;
+}
+
+.no-pad{
+	padding: 0px!important;
+}
+
+.carousel.carousel-slider .carousel-item {
+  max-height: 30rem;
+  }
+
+ .carousel.carousel-slider {
+  max-height: 30rem;
+}
+
+
