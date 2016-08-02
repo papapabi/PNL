@@ -1,7 +1,13 @@
 $(document).ready(function() {
     $('map').imageMapResize();
+
     $('#euro_zone').on('click',function(){
       $('#header').text("European Town Center");
+      $('#caption').text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.");
+      $('#photo-container').css('display','none');
+      $('#photo-container').css('display','block');
+      $('#euro-photos').siblings().hide();
+      $('#euro-photos').css('display','block');
       
     });
 
@@ -142,6 +148,15 @@ $(document).ready(function() {
       $('#photo-container').css('display','block');
       $('#celeb-photos').siblings().hide();
       $('#celeb-photos').css('display','block');
+      return false;
+    });
+    $('#marina').on('click',function(){
+      $('#header').text("Marina");
+      $('#caption').text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.");
+      $('#photo-container').css('display','none');
+      $('#photo-container').css('display','block');
+      $('#marina-photos').siblings().hide();
+      $('#marina-photos').css('display','block');
       return false;
     });
     
