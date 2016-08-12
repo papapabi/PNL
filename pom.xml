@@ -47,6 +47,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>pnl</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
